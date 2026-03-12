@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1840cead0be67b43a593d0d4b071eaa, type: 3}
+  m_Name: Tile_R04
+  m_EditorClassIdentifier: Assembly-CSharp::PlatformTile
+  tileName: Round_Q4
+  prefab: {fileID: 527380362579924585, guid: cbbfb361ad3de4d4690f8237c59e8c47, type: 3}
+  entrySocket: 3
+  exitSocket: 0
+  exitFacing: 0
+  yRotation: 0
+  weight: 1
