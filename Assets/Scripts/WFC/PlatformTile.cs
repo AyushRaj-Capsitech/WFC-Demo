@@ -1,26 +1,20 @@
-// PlatformTile.cs
-// Data container for each platform type
-// This becomes a ScriptableObject you configure in Inspector
+// PlatformTile.cs - PLANE VERSION
+// Uses Entry/Exit planes for perfect alignment
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New PlatformTile", 
-                 menuName = "WFC/Platform Tile")]
+[CreateAssetMenu(fileName = "New PlatformTile", menuName = "WFC/Platform Tile")]
 public class PlatformTile : ScriptableObject
 {
-    [Header("Identity")]
+    [Header("--- IDENTITY ---")]
     public string tileName;
-    public GameObject prefab;           // Drag your prefab here
+    public GameObject prefab;
 
-    [Header("Connection Sockets")]
-    public SocketType entrySocket;      // Direction player arrives FROM
-    public SocketType exitSocket;       // Direction player leaves TO
+    [Header("--- PLANE NAMES ---")]
+    public string entryPlaneName = "EntryPlane";
+    public string exitPlaneName  = "ExitPlane";
 
-    [Header("Spawn Settings")]
-    public FacingDirection exitFacing;  // Player facing after this tile
-    public float yRotation = 0f;        // Rotation applied when spawning
-
-    [Header("Balancing")]
+    [Header("--- FREQUENCY ---")]
     [Range(0.1f, 5f)]
-    public float weight = 1f;           // Higher = appears more often
+    public float weight = 1f;
 }

@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlatformTile
   tileName: Line
   prefab: {fileID: 5007895362252099604, guid: 6b2f6a1297548574ab19975ebd1d27f1, type: 3}
-  entrySocket: 1
-  exitSocket: 0
-  exitFacing: 0
-  yRotation: 0
+  entryMarkerName: EntryPoint
+  exitMarkerName: ExitPoint
   weight: 2
