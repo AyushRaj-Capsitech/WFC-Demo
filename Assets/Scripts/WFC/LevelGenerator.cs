@@ -139,48 +139,35 @@ public class LevelGenerator : MonoBehaviour
             return false;
         }
 
-        Quaternion entryWorldRot = slot.spawnRotation * entryPlane.localRotation;
+        // The input slot.spawnRotation and slot.spawnPosition are the Target World Transform for the Entry Plane.
+        // We need to find the Prefab's World Transform that makes the Entry Plane match this target.
+        
+        // 1. Calculate Prefab World Rotation
+        // prefabRotation * entryPlane.localRotation = targetEntryRotation
+        // prefabRotation = targetEntryRotation * Inverse(entryPlane.localRotation)
+        Quaternion prefabRotation = slot.spawnRotation * Quaternion.Inverse(entryPlane.localRotation);
+        
+        // 2. Calculate Prefab World Position
+        // prefabPosition + prefabRotation * entryPlane.localPosition = targetEntryPosition
+        // prefabPosition = targetEntryPosition - (prefabRotation * entryPlane.localPosition)
+        Vector3 prefabPosition = slot.spawnPosition - (prefabRotation * entryPlane.localPosition);
 
-        Vector3 entryForward = entryWorldRot * Vector3.forward;
+        // 3. Update slot with the actual spawn transform for the prefab
+        slot.spawnPosition = prefabPosition;
+        slot.spawnRotation = prefabRotation;
 
-        Vector3 entryWorldOffset = slot.spawnRotation * entryPlane.localPosition;
-
-        Vector3 prefabCenter = slot.spawnPosition - entryWorldOffset;
-
-        slot.spawnPosition = prefabCenter;
-
-        Vector3 exitWorldOffset = slot.spawnRotation * exitPlane.localPosition;
-
-        slot.exitWorldPosition = prefabCenter + exitWorldOffset;
-
-        slot.exitWorldRotation = slot.spawnRotation * exitPlane.localRotation;
+        // 4. Calculate the World Transform of the Exit Plane for the NEXT tile
+        slot.exitWorldPosition = prefabPosition + (prefabRotation * exitPlane.localPosition);
+        slot.exitWorldRotation = prefabRotation * exitPlane.localRotation;
 
         return true;
     }
 
     void AlignNextSlot(SlotData current, SlotData next)
     {
+        // Align next slot's entry target to this slot's exit point
         next.spawnPosition = current.exitWorldPosition;
-
-        Vector3 exitForward = current.exitWorldRotation * Vector3.forward;
-        Vector3 exitUp = current.exitWorldRotation * Vector3.up;
-
-        Vector3 nextForward = exitForward;
-
-        nextForward.y = 0f;
-
-        if (nextForward.magnitude < 0.001f)
-            nextForward = -exitForward;
-
-        // next.spawnRotation = Quaternion.LookRotation(
-        //     nextForward.normalized,
-        //     Vector3.up
-        // );
-
-        // next.entryWorldRotation = Quaternion.LookRotation(
-        //     nextForward.normalized,
-        //     Vector3.up
-        // );
+        next.spawnRotation = current.exitWorldRotation;
     }
 
     Transform FindChildByName(GameObject prefab, string childName)
