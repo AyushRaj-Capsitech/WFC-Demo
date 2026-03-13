@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7711629935267156761}
   - component: {fileID: 5546121809387470931}
   - component: {fileID: 7774719626690284272}
-  m_Layer: 0
+  - component: {fileID: -5929614337978461319}
+  m_Layer: 7
   m_Name: R03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2090921909656839486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.078390054, y: 8.132522e-10, z: -0.077870615}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -94,6 +95,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5929614337978461319
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090921909656839486}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -753939762211244738, guid: 34a919b3532ea8846b1b9e7c40fcc5a2, type: 3}
 --- !u!1 &3219494882421607153
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +129,7 @@ GameObject:
   - component: {fileID: 7111870092510680206}
   - component: {fileID: 7107292759231689882}
   - component: {fileID: 3888848447510360987}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8054861735053910320}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3378557062353912032}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +304,7 @@ GameObject:
   - component: {fileID: 4460199519097000440}
   - component: {fileID: 8292480101159676747}
   - component: {fileID: 7140125034551420584}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

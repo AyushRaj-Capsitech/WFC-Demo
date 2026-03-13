@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6165090659231309798}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7065367248433379995}
   - component: {fileID: 2181139486768888575}
   - component: {fileID: 1277243546027214514}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 1078957855327528941}
   - component: {fileID: 8509192552544423519}
   - component: {fileID: 4333265448574960849}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7613569257939607984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,8 @@ GameObject:
   - component: {fileID: 7206648800520163512}
   - component: {fileID: 2875639837035148948}
   - component: {fileID: 5893083141224210293}
-  m_Layer: 0
+  - component: {fileID: -1992010096386235842}
+  m_Layer: 7
   m_Name: V_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,8 +315,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8310097410169479992}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00000000116298, y: -0.0000000012761253, z: 0.11200292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -382,3 +383,25 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1992010096386235842
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8310097410169479992}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3096075510552154774, guid: 34a919b3532ea8846b1b9e7c40fcc5a2, type: 3}

@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 508144043537122790}
   - component: {fileID: 5754076466495495496}
   - component: {fileID: 4527387211692678503}
-  m_Layer: 0
+  - component: {fileID: 6484707334721616690}
+  m_Layer: 7
   m_Name: V_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124980474457641502}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000026235512, y: -0.0000000012761253, z: -0.11200289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -94,6 +95,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6484707334721616690
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124980474457641502}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7391947895304895647, guid: 34a919b3532ea8846b1b9e7c40fcc5a2, type: 3}
 --- !u!1 &2685031423701975519
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +129,7 @@ GameObject:
   - component: {fileID: 7493842545777939790}
   - component: {fileID: 1048092232646915800}
   - component: {fileID: 4535159274923661856}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3468473368381967428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +273,7 @@ GameObject:
   - component: {fileID: 4012040152981942768}
   - component: {fileID: 4862677110206584547}
   - component: {fileID: 3005104301363096199}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 111610258190359882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

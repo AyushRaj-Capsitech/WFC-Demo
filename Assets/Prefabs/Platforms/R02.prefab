@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 78002779164929710}
   - component: {fileID: 8140643217818595639}
   - component: {fileID: 36361904832043861}
-  m_Layer: 0
+  - component: {fileID: 732577083588854849}
+  m_Layer: 7
   m_Name: R02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4692409774783851853}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.078388005, y: -0.000000020080524, z: 0.077872634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -94,6 +95,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &732577083588854849
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692409774783851853}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7685708130758202012, guid: 34a919b3532ea8846b1b9e7c40fcc5a2, type: 3}
 --- !u!1 &4796873462875163573
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077043854734647676}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +160,7 @@ GameObject:
   - component: {fileID: 3552421245054574237}
   - component: {fileID: 9000830613475018427}
   - component: {fileID: 8347906617011135366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4579486162278757073}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +304,7 @@ GameObject:
   - component: {fileID: 4642998450983367332}
   - component: {fileID: 8503929605717353987}
   - component: {fileID: 1626003281781256570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExitPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

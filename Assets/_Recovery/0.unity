@@ -393,7 +393,6 @@ GameObject:
   m_Component:
   - component: {fileID: 659459937}
   - component: {fileID: 659459936}
-  - component: {fileID: 659459938}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -422,13 +421,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2dca3057b2a9a58478557155aaaf3ec8, type: 2}
   - {fileID: 11400000, guid: 3a43755a628c63e4e82e2af06f21a1fa, type: 2}
   - {fileID: 11400000, guid: c1e27550c5dfaf84b8d495700e14def0, type: 2}
-  maxConsecutiveCurves: 6
-  maxConsecutiveStraights: 2
-  platformBoundsSize: {x: 0.2, y: 0.1, z: 0.2}
-  platformLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  minDistanceBetweenPlatforms: 0.25
+  maxConsecutiveCurves: 10
+  maxConsecutiveStraights: 0
   showGizmos: 0
 --- !u!4 &659459937
 Transform:
@@ -445,21 +439,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &659459938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659459935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a500d9788c38b4b89cd288b109237b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelSaver
-  saveFolderPath: Assets/SavedLevels
-  levelBaseName: Level
-  currentLevelNumber: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
