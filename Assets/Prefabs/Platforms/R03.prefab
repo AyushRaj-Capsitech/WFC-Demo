@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7711629935267156761}
   - component: {fileID: 5546121809387470931}
   - component: {fileID: 7774719626690284272}
-  - component: {fileID: -5929614337978461319}
-  m_Layer: 7
+  - component: {fileID: -6147065544310987465}
+  m_Layer: 0
   m_Name: R03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2090921909656839486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.078390054, y: 8.132522e-10, z: -0.077870615}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -95,7 +95,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-5929614337978461319
+--- !u!64 &-6147065544310987465
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 7111870092510680206}
   - component: {fileID: 7107292759231689882}
   - component: {fileID: 3888848447510360987}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ExitPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,8 +145,8 @@ Transform:
   m_GameObject: {fileID: 3219494882421607153}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.081, y: 0.005, z: -0.048}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0.081, y: 0.00088, z: -0.03936}
+  m_LocalScale: {x: 0.07593961, y: 0.047369108, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7711629935267156761}
@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8054861735053910320}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3378557062353912032}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ExitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 4460199519097000440}
   - component: {fileID: 8292480101159676747}
   - component: {fileID: 7140125034551420584}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: EntryPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,8 +320,8 @@ Transform:
   m_GameObject: {fileID: 5467416372098991983}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.03, y: -0.003, z: 0.081}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: -0.03952, y: 0.00024, z: 0.0797}
+  m_LocalScale: {x: 0.074658416, y: 0.043959923, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7711629935267156761}

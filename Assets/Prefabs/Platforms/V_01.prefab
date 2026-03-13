@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6165090659231309798}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ExitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7065367248433379995}
   - component: {fileID: 2181139486768888575}
   - component: {fileID: 1277243546027214514}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: EntryPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 5286261290591251963}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.065, y: 0, z: -0.1128}
-  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
+  m_LocalPosition: {x: -0.07039, y: 0.00034, z: -0.1128}
+  m_LocalScale: {x: 0.07572821, y: 0.045243572, z: 0.099999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7206648800520163512}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 1078957855327528941}
   - component: {fileID: 8509192552544423519}
   - component: {fileID: 4333265448574960849}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ExitPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,8 +172,8 @@ Transform:
   m_GameObject: {fileID: 6185605481684934446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0699, y: 0, z: 0.1107}
-  m_LocalScale: {x: 0.1, y: 0.099999994, z: 0.1}
+  m_LocalPosition: {x: 0.06993, y: -0.00037, z: 0.1128}
+  m_LocalScale: {x: 0.07705623, y: 0.046773486, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7206648800520163512}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7613569257939607984}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: EntryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,8 +299,8 @@ GameObject:
   - component: {fileID: 7206648800520163512}
   - component: {fileID: 2875639837035148948}
   - component: {fileID: 5893083141224210293}
-  - component: {fileID: -1992010096386235842}
-  m_Layer: 7
+  - component: {fileID: -2072863424534579097}
+  m_Layer: 0
   m_Name: V_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,8 +315,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8310097410169479992}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00000000116298, y: -0.0000000012761253, z: 0.11200292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -383,7 +383,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-1992010096386235842
+--- !u!64 &-2072863424534579097
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
