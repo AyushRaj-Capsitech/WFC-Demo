@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Tile_V01
   m_EditorClassIdentifier: Assembly-CSharp::PlatformTile
   tileName: V_Shape1
-  prefab: {fileID: 8310097410169479992, guid: ef703825334d4e6408b021d4001d31df, type: 3}
-  entrySocket: 1
-  exitSocket: 0
-  exitFacing: 0
-  yRotation: 0
+  prefab: {fileID: 8310097410169479992, guid: fb7a1e9c41f2f85409ee69cd39aff017, type: 3}
+  entryPlaneName: EntryPlane
+  exitPlaneName: ExitPlane
   weight: 1.5
+  difficulty: 0.8

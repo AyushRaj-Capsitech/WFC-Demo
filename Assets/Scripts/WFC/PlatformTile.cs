@@ -17,4 +17,6 @@ public class PlatformTile : ScriptableObject
     [Header("--- FREQUENCY ---")]
     [Range(0.1f, 5f)]
     public float weight = 1f;
+    [Range(0f, 1f)]
+    public float difficulty = 0.5f;
 }

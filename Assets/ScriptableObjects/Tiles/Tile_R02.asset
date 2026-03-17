@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Tile_R02
   m_EditorClassIdentifier: Assembly-CSharp::PlatformTile
   tileName: Round_Q2
-  prefab: {fileID: 4692409774783851853, guid: 82740755ce8fd584484d350ce88fc140, type: 3}
-  entrySocket: 1
-  exitSocket: 2
-  exitFacing: 1
-  yRotation: 0
+  prefab: {fileID: 4692409774783851853, guid: e10e15d7b97d6c541a751e0cfc338845, type: 3}
+  entryPlaneName: EntryPlane
+  exitPlaneName: ExitPlane
   weight: 1
+  difficulty: 0.6

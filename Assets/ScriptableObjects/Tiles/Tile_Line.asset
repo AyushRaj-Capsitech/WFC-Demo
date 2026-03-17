@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Tile_Line
   m_EditorClassIdentifier: Assembly-CSharp::PlatformTile
   tileName: Line
-  prefab: {fileID: 5007895362252099604, guid: 6b2f6a1297548574ab19975ebd1d27f1, type: 3}
-  entryMarkerName: EntryPoint
-  exitMarkerName: ExitPoint
+  prefab: {fileID: 5007895362252099604, guid: 67b7d3d489630984b87443f02e3e73fc, type: 3}
+  entryPlaneName: EntryPlane
+  exitPlaneName: ExitPlane
   weight: 2
+  difficulty: 0.5
