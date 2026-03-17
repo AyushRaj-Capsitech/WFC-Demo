@@ -41,9 +41,35 @@ public class LevelSaverEditor : Editor
         GUI.backgroundColor = Color.yellow;
         if (GUILayout.Button("🔄 Generate New Level (no save)", GUILayout.Height(40)))
         {
-            LevelGenerator generator = saver.GetComponent<LevelGenerator>();
-            if (generator != null)
-                generator.GenerateLevel();
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.NextLevel();
+            }
+            else
+            {
+                LevelGenerator generator = saver.GetComponent<LevelGenerator>();
+                if (generator != null)
+                    generator.GenerateLevel();
+            }
+        }
+        
+        EditorGUILayout.Space(15);
+        EditorGUILayout.LabelField("--- BATCH OPERATIONS ---", EditorStyles.boldLabel);
+
+        GUI.backgroundColor = new Color(0.7f, 0.3f, 1f); // Purple
+        if (GUILayout.Button("🚀 Generate & Save All Levels (Batch)", GUILayout.Height(50)))
+        {
+            bool proceed = EditorUtility.DisplayDialog(
+                "Batch Generate Levels",
+                "This will auto-generate and save ALL levels defined in the Level Progression Asset.\n\nAre you sure you want to proceed?",
+                "Yes, Generate All",
+                "Cancel"
+            );
+
+            if (proceed)
+            {
+                saver.GenerateAndSaveAllLevels();
+            }
         }
 
         GUI.backgroundColor = Color.white;

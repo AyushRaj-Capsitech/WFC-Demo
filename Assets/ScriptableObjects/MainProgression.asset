@@ -74,10 +74,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   minLevelLength: 5
-  maxLevelLength: 12
-  easyMaxStraights: 5
-  hardMaxStraights: 2
-  easyMaxCurves: 1
-  hardMaxCurves: 4
-  easyDifficultyInfluence: 0.2
-  hardDifficultyInfluence: 0.95
+  maxLevelLength: 20
+  easyMaxStraights: 2
+  hardMaxStraights: 4
+  easyMaxCurves: 2
+  hardMaxCurves: 6
+  easyDifficultyInfluence: 0.215
+  hardDifficultyInfluence: 1

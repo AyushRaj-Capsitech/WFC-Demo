@@ -422,6 +422,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2dca3057b2a9a58478557155aaaf3ec8, type: 2}
   - {fileID: 11400000, guid: c1e27550c5dfaf84b8d495700e14def0, type: 2}
   - {fileID: 11400000, guid: 3a43755a628c63e4e82e2af06f21a1fa, type: 2}
+  - {fileID: 11400000, guid: a22bdb3cfa1af6248a8d638933d75761, type: 2}
   maxConsecutiveCurves: 6
   maxConsecutiveStraights: 1
   difficultyMode: 1

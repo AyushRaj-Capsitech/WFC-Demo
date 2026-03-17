@@ -118,15 +118,69 @@ public class LevelSaver : MonoBehaviour
     {
         SaveCurrentLevel();
 
-        LevelGenerator generator = GetComponent<LevelGenerator>();
-        if (generator != null)
+        if (LevelManager.Instance != null)
         {
-            generator.GenerateLevel();
-            Debug.Log("🔄 New level generated after save");
+            LevelManager.Instance.NextLevel();
+            Debug.Log("🔄 New level generated via LevelManager and saved");
         }
         else
         {
-            Debug.LogError("❌ LevelGenerator not found on this GameObject");
+            LevelGenerator generator = GetComponent<LevelGenerator>();
+            if (generator != null)
+            {
+                generator.GenerateLevel();
+                Debug.Log("🔄 New level generated via LevelGenerator after save");
+            }
+            else
+            {
+                Debug.LogError("❌ LevelManager and LevelGenerator not found");
+            }
         }
+    }
+
+    // =====================================================
+    // BATCH GENERATE ALL LEVELS
+    // Generates and saves levels 1 through totalLevels
+    // =====================================================
+    public void GenerateAndSaveAllLevels()
+    {
+#if UNITY_EDITOR
+        if (LevelManager.Instance == null || LevelManager.Instance.progressionAsset == null)
+        {
+            Debug.LogError("❌ LevelManager or LevelProgressionAsset is missing! Cannot batch generate.");
+            return;
+        }
+
+        int totalLevelsToGenerate = LevelManager.Instance.progressionAsset.totalLevels;
+        Debug.Log($"🚀 Starting batch generation of {totalLevelsToGenerate} levels...");
+
+        // Ensure we handle saving starting at 1
+        currentLevelNumber = 1;
+
+        for (int i = 1; i <= totalLevelsToGenerate; i++)
+        {
+            // 1) Ask LevelManager to load and generate this specific level
+            LevelManager.Instance.LoadLevel(i);
+
+            // 2) Save what just got generated!
+            SaveCurrentLevel();
+            
+            // Clean up the spawned objects from the scene so they don't visually overlap
+            // Since SaveCurrentLevel reparents them to a new LevelRoot, find and destroy that root
+            string expectedLevelName = levelBaseName + "_" + (i).ToString("D3");
+            GameObject savedRoot = GameObject.Find(expectedLevelName);
+            if (savedRoot != null)
+            {
+                DestroyImmediate(savedRoot);
+            }
+        }
+
+        Debug.Log($"🏁 Batch generation complete! {totalLevelsToGenerate} levels saved to {saveFolderPath}.");
+        
+        // Return to level 1 for safety
+        LevelManager.Instance.LoadLevel(1);
+#else
+        Debug.LogWarning("⚠️ LevelSaver only works in Unity Editor.");
+#endif
     }
 }
